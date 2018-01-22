@@ -38,7 +38,7 @@ transition()
 
 .house
   margin-right: -100px
-  width: 200px !important
+  width: 230px !important
   .roof
     height: 60px
     background-color: #d11242

@@ -41,19 +41,20 @@ export default {
         switch (v) {
           case 1:
             this.$refs.house.$el.classList.add('version-added-floor')
+            this.$refs.house_container.classList.add('version_1')
             break
           case 2:
             this.$refs.right_house.$el.classList.add('version-added-right-house')
             this.$refs.house.$el.classList.add('version-added-right-house')
             this.$refs.house.$el.classList.add('version-added-floor')
-            this.$refs.house_container.classList.add('version-added-right-house')
+            this.$refs.house_container.classList.add('version_2')
             break
           case 3:
             this.$refs.right_house.$el.classList.add('version-added-right-house')
             this.$refs.house.$el.classList.add('version-added-right-house')
             this.$refs.house.$el.classList.add('version-added-floor')
             this.$refs.left_house.$el.classList.add('version-added-left-house')
-            this.$refs.house_container.classList.add('version-added-right-house')
+            this.$refs.house_container.classList.add('version_3')
             break
         }
       }
@@ -62,14 +63,18 @@ export default {
         this.$refs.house.$el.classList.remove('version-added-right-house')
         this.$refs.house.$el.classList.remove('version-added-floor')
         this.$refs.left_house.$el.classList.remove('version-added-left-house')
-        this.$refs.house_container.classList.remove('version-added-right-house')
+        this.$refs.house_container.classList.remove('version_1')
+        this.$refs.house_container.classList.remove('version_2')
+        this.$refs.house_container.classList.remove('version_3')
         func(value)
       } else {
         setTimeout(() => {
           this.$refs.left_house.$el.classList.remove('version-added-left-house')
           this.$refs.right_house.$el.classList.remove('version-added-right-house')
           this.$refs.house.$el.classList.remove('version-added-right-house')
-          this.$refs.house_container.classList.remove('version-added-right-house')
+          this.$refs.house_container.classList.remove('version_1')
+          this.$refs.house_container.classList.remove('version_2')
+          this.$refs.house_container.classList.remove('version_3')
           setTimeout(() => {
             this.$refs.house.$el.classList.remove('version-added-floor')
             setTimeout(() => {
@@ -115,9 +120,16 @@ $house-transition = all ease 700ms
       align-items: flex-end
       justify-content: center
       .myhouse
-        transition $house-transition
-        transform: translate(-39px, 0)
         width: 160px
-        &.version-added-right-house
+        transform: translate(11px, 0)
+        transition $house-transition
+      &.version_1
+        .myhouse
+          transform: translate(11px, 0)
+      &.version_2
+        .myhouse
+          transform: translate(47px, 0)
+      &.version_3
+        .myhouse
           transform: translate(0, 0)
 </style>

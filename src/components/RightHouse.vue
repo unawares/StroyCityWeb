@@ -53,7 +53,6 @@ $house-wall-horizontal-margin = 12px
 .house-container
   position: relative
   z-index: -1
-  transition $house-transition
   overflow: hidden
   display: flex
   justify-content: flex-end
