@@ -61,61 +61,14 @@ vendor(prop, args)
   -o-{prop} args
   {prop} args
 
-animation()
-  vendor('animation', arguments)
-
-border-radius()
-  vendor('border-radius', arguments)
-
-border-top-radius()
-  vendor('border-top-left-radius', arguments)
-  vendor('border-top-right-radius', arguments)
-
-border-bottom-radius()
-  vendor('border-bottom-left-radius', arguments)
-  vendor('border-bottom-right-radius', arguments)
-
-linear-gradient(start_color, end_color, start = left top, end = left bottom)
-  mozstart = top if start = left top
-  background start_color
-  background -moz-linear-gradient(mozstart, start_color 0%, end_color 100%)
-  background -webkit-gradient(linear, start, end, color-stop(0%, start_color), color-stop(100%, end_color))
-  -webkit-background-origin padding-box
-
-background-clip()
-  vendor('background-clip', arguments)
-
-box-shadow()
-  -moz-box-shadow arguments
-  -webkit-box-shadow arguments
-  box-shadow arguments
-
-box(orient, pack, align)
-  display -webkit-box
-  display -moz-box
-  display box
-  vendor('box-orient', orient)
-  vendor('box-pack', pack)
-  vendor('box-align', align)
-  vendor('box-lines', multiple)
-
-box_flex()
-  vendor('box-flex', arguments)
-
-text-fill-color()
-  vendor('text-fill-color', arguments)
-
 transition()
   vendor('transition', arguments)
 
-transform()
-  vendor('transform', arguments)
-
-$house-wall-height = 130px
-$house-wall-horizontal-margin = 16px
-$house-fundament-height = 16px
-$house-floor-divider-height = 10px
-$house-floor-padding = 16px
+$house-wall-height = 92px
+$house-wall-horizontal-margin = 12px
+$house-fundament-height = 10px
+$house-floor-divider-height = 7px
+$house-floor-padding = 5px
 $house-transition = all ease 700ms
 
 .house
@@ -203,11 +156,11 @@ $house-transition = all ease 700ms
     height: $house-fundament-height
     background-color: #6b6b6b
   .door-image
-    height: 110px
+    height: 78px
   .small-window-image
-    height: 60px
+    height: 43px
   .big-window-image
-    height: 100px
+    height: 70px
   &.version-added-floor
     .house-second-floor-container
       height: $house-wall-height

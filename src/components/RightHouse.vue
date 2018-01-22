@@ -43,59 +43,12 @@ vendor(prop, args)
   -o-{prop} args
   {prop} args
 
-animation()
-  vendor('animation', arguments)
-
-border-radius()
-  vendor('border-radius', arguments)
-
-border-top-radius()
-  vendor('border-top-left-radius', arguments)
-  vendor('border-top-right-radius', arguments)
-
-border-bottom-radius()
-  vendor('border-bottom-left-radius', arguments)
-  vendor('border-bottom-right-radius', arguments)
-
-linear-gradient(start_color, end_color, start = left top, end = left bottom)
-  mozstart = top if start = left top
-  background start_color
-  background -moz-linear-gradient(mozstart, start_color 0%, end_color 100%)
-  background -webkit-gradient(linear, start, end, color-stop(0%, start_color), color-stop(100%, end_color))
-  -webkit-background-origin padding-box
-
-background-clip()
-  vendor('background-clip', arguments)
-
-box-shadow()
-  -moz-box-shadow arguments
-  -webkit-box-shadow arguments
-  box-shadow arguments
-
-box(orient, pack, align)
-  display -webkit-box
-  display -moz-box
-  display box
-  vendor('box-orient', orient)
-  vendor('box-pack', pack)
-  vendor('box-align', align)
-  vendor('box-lines', multiple)
-
-box_flex()
-  vendor('box-flex', arguments)
-
-text-fill-color()
-  vendor('text-fill-color', arguments)
-
 transition()
   vendor('transition', arguments)
 
-transform()
-  vendor('transform', arguments)
-
-$house-wall-height = 130px
+$house-wall-height = 92px
 $house-transition = all ease 700ms
-$house-wall-horizontal-margin = 16px
+$house-wall-horizontal-margin = 12px
 
 .house-container
   position: relative
@@ -105,8 +58,6 @@ $house-wall-horizontal-margin = 16px
   display: flex
   justify-content: flex-end
   margin-left: -80px
-  &:not(.version-added-right-house)
-    width: 0px !important
   .house
     width: 100%
     height: 100%
@@ -133,16 +84,15 @@ $house-wall-horizontal-margin = 16px
         justify-content: flex-end
         align-items: flex-end
         .house-door
-          height: 110px
-          width: 50px
-          margin-right: 40px
+          width: 36px
+          margin-right: 30px
       .house-second-floor
         height: $house-wall-height
         .windows
           width: 100%
           display: flex
           justify-content: flex-end
-          padding-right: 40px
+          padding-right: 30px
           padding-top: 20px
     .house-object
       position: absolute
@@ -152,15 +102,27 @@ $house-wall-horizontal-margin = 16px
       width: 100%
       display: flex
       justify-content: flex-end
+      align-items: flex-end
+      overflow: hidden
       .house-object-image
-        margin: -10px -10px -15px
+        width: 180px
+        margin: -10px -7px -6px
     .house-shadow
       position: absolute
       bottom: 0
       left: 0
       height: 90%
       width: 100%
-      transform: translate(-50% , 0px)
+      transform: translate(-50px , 0px)
       .house-shadow-image
+        width: 100%
         opacity: 0.2
+  &:not(.version-added-right-house)
+    width: 0px !important
+  .door-image
+    height: 78px
+  .small-window-image
+    height: 43px
+  .big-window-image
+    height: 70px
 </style>
