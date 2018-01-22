@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 61 129" style="enable-background:new 0 0 61 129;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#A7600C;}
+	.st1{fill:#00AFDB;}
+	.st2{fill:#BE854C;}
+	.st3{fill:#FFFFFF;}
+	.st4{opacity:0.5;fill:#00AFDB;}
+</style>
+<g>
+	<g>
+		<rect x="-0.1" y="0" class="st0" width="61.2" height="129.1"/>
+		<g>
+			<rect x="9.1" y="13.1" class="st1" width="11.4" height="24.8"/>
+			<rect x="24.8" y="13.1" class="st1" width="11.4" height="24.8"/>
+			<rect x="40.4" y="13.1" class="st1" width="11.4" height="24.8"/>
+		</g>
+		<g>
+			<rect x="9.1" y="45.6" class="st2" width="17" height="70.9"/>
+			<rect x="34.9" y="45.6" class="st2" width="17" height="70.9"/>
+		</g>
+		<rect x="2.1" y="47.5" class="st3" width="3.4" height="15.5"/>
+	</g>
+	<polygon class="st4" points="9.1,13.1 20.6,13.1 9.1,37.8 	"/>
+	<polygon class="st4" points="24.8,13.1 36.2,13.1 24.8,37.8 	"/>
+	<polygon class="st4" points="40.4,13.1 51.9,13.1 40.4,37.8 	"/>
+</g>
+</svg>
