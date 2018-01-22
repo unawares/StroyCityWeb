@@ -37,6 +37,7 @@ transition()
   vendor('transition', arguments)
 
 .house
+  overflow: hidden
   margin-right: -100px
   width: 230px !important
   .roof

@@ -119,17 +119,22 @@ $house-transition = all ease 700ms
       display: flex
       align-items: flex-end
       justify-content: center
+      width: 170px
+      transition $house-transition
       .myhouse
         width: 160px
         transform: translate(11px, 0)
         transition $house-transition
       &.version_1
+        width: 170px
         .myhouse
           transform: translate(11px, 0)
       &.version_2
+        width: 250px
         .myhouse
-          transform: translate(47px, 0)
+          transform: translate(50px, 0)
       &.version_3
+        width: 380px
         .myhouse
           transform: translate(0, 0)
 </style>

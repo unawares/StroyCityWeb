@@ -72,6 +72,7 @@ $house-floor-padding = 5px
 $house-transition = all ease 700ms
 
 .house
+  overflow: hidden
   > *
     margin: 0 auto
   .roof
